@@ -23,19 +23,19 @@ public:
     float MontoPago()
     {
         int descuento;
-        if (tipo_cliente == 1)
+        int tipo;
+
+        cout << "¿Que tipo de cliente es?: ";
+        cin >> tipo;
+
+        it = descuentos.find(tipo);
+        
+        for (int i = 0; i < descuentos.size(); i++)
         {
-            it = descuentos.find(1);
-            if(it != descuentos.end())
-            {
-                descuento = it->second;
-            }
         }
-        return descuento;
     }
 };
 
 int main()
 {
-
 }
