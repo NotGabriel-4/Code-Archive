@@ -70,14 +70,14 @@ public:
     }
 };
 
-class Librero : public Libro
+class Librero
 {
 private:
     std::string nombre, direccion;
     std::vector<Libro *> Libros;
 
 public:
-    Librero(std::string nombre, std::string autor, std::string direccion) : Libro(nombre, autor)
+    Librero(std::string nombre, std::string direccion)
     {
         this->nombre = nombre;
         this->direccion = direccion;
