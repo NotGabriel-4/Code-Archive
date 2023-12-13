@@ -91,5 +91,4 @@ public:
 
 int main()
 {
-    cout << "Hola Mundo" << endl;
 }
